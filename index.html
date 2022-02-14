@@ -19,9 +19,9 @@
                     <a href="#" class="header-logo"></a>
                     <nav>
                         <ul>
-                            <li><a href="#">Мероприятия</a></li>
-                            <li><a href="#">Расписание</a></li>
-                            <li><a href="#">О компании</a></li>
+                            <li><a href="#events">Мероприятия</a></li>
+                            <li><a href="#schedule">Расписание</a></li>
+                            <li><a href="#about">О компании</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -41,7 +41,7 @@
                         <span>&gt;&nbsp;15&nbsp;&nbsp;тренировок</span>
                         <p>в области спортивной физиологии и нутрициологии</p>
                     </div>
-                    <a href="#" class="banner-more button">Узнать подробнее</a>
+                    <a href="#" class="banner-more button" onclick="openModal()">Узнать подробнее</a>
                     <a href="#events" class="btn-down"></a>
                     <div class="banner-bg">
                         <div class="bg-left"></div>
@@ -57,36 +57,40 @@
                     <h2>Ближайшие события</h2>
                 </div>
                 <div class="events-grid">
-                    <div class="events-grid-item events-item-hoverable">
+                    <div class="events-grid-item">
                         <img class="event-grid-thumb" src="./img/maraphon.png" alt="марафон">
                         <img class="event-thumb-active" src="./img/maraphon hover.png" alt="марафон">
                         <div class="events-grid-text">
                             <p class="event-date">29.06 - 4.07</p>
                             <p class="event-title">Марафон выносливости</p>
-                            <a class="event-active-link" href="#" >Учавствовать</a>
+                            <button class="event-active-btn" onclick="openModal()">Учавствовать</button>
                         </div>
                         <p class="event-type">Марафон</p>
                     </div>
                     <div class="events-grid-item">
                         <img class="event-grid-thumb" src="./img/Vebinar 1.png" alt="вебинар">
+                        <img class="event-thumb-active" src="./img/Vebinar 1.png" alt="вебинар">
                         <div class="events-grid-text">
                             <p class="event-date">9.07</p>
                             <p class="event-title">Как стать тренером?</p>
+                            <button class="event-active-btn" onclick="openModal()">Учавствовать</button>
                         </div>
                         <p class="event-type">Вебинар</p>
                     </div>
                     <div class="events-grid-item">
                         <img class="event-grid-thumb yoga" src="./img/yoga.jpg" alt="йога">
+                        <img class="yoga event-thumb-active" src="./img/yoga.jpg" alt="йога">
                         <div class="events-grid-text">
                             <p class="event-date">15.07</p>
                             <p class="event-title">Йога, как стиль жизни</p>
+                            <button class="event-active-btn" onclick="openModal()">Учавствовать</button>
                         </div>
                         <p class="event-type">Вебинар</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
+        <section id="schedule">
             <div class="container">
                 <div class="section-header">
                     <h2>Расписание тренировок</h2>
@@ -95,34 +99,51 @@
                 <div class="schedule-grid">
                     <div class="schedule-grid-item">
                         <p class="schedule-date">22 июня, 10:00</p>
-                        <img src="./icons/body.svg" alt="body" height="65">
-                        <p class="schedule-title">Функциональный тренинг</p>
+                        <div class="schedule-info">
+                            <img src="./icons/body.svg" alt="body" height="65">
+                            <p class="schedule-title">Функциональный тренинг</p>
+                            <p class="schedule-description">Улучшаем силу, выносливость и гибкость.</p>
+                        </div>
                     </div>
                     <div class="schedule-grid-item">
                         <p class="schedule-date">24 июня, 10:00</p>
-                        <img src="./icons/bottle.svg" alt="bottle" height="85">
-                        <p class="schedule-title">Body sculpt</p>
+                        <div class="schedule-info">
+                            <img src="./icons/bottle.svg" alt="bottle" height="85">
+                            <p class="schedule-title">Body sculpt</p>
+                            <p class="schedule-description">Улучшаем работу органов дыхания, укрепляем суставы и позвоночник.</p>
+                        </div>
                     </div>
                     <div class="schedule-grid-item">
                         <p class="schedule-date">26 июня, 11:00</p>
-                        <img src="./icons/dumbbell.svg" alt="dumbbell" height="50">
-                        <p class="schedule-title">L.A.B.</p>
+                        <div class="schedule-info">
+                            <img src="./icons/dumbbell.svg" alt="dumbbell" height="50">
+                            <p class="schedule-title">L.A.B.</p>
+                            <p class="schedule-description">Сочетание нагрузок разной сложности и интенсивности для каждого.</p>
+                        </div>
                     </div>
                     <div class="schedule-grid-item active">
                         <p class="schedule-date">23 июня, 10:00</p>
-                        <img src="./icons/jump.svg" alt="jump" height="107">
-                        <p class="schedule-title">Силовой микс</p>
-                        <p class="schedule-description">Упражнения помогут создать красивый рельеф и прийти в&nbsp;спортивную форму.</p>
+                        <div class="schedule-info">
+                            <img src="./icons/jump.svg" alt="jump" height="107">
+                            <p class="schedule-title">Силовой микс</p>
+                            <p class="schedule-description">Упражнения помогут создать красивый рельеф и прийти в&nbsp;спортивную форму.</p>
+                        </div>
                     </div>
                     <div class="schedule-grid-item">
                         <p class="schedule-date">25 июня, 11:00</p>
-                        <img src="./icons/heart.svg" alt="heart" height="61">
-                        <p class="schedule-title">Дыхательные практики</p>
+                        <div class="schedule-info">
+                            <img src="./icons/heart.svg" alt="heart" height="61">
+                            <p class="schedule-title">Дыхательные практики</p>
+                            <p class="schedule-description">Упражнения, направленные на укрепления здоровья и поднятия тонуса организма.</p>
+                        </div>
                     </div>
                     <div class="schedule-grid-item">
                         <p class="schedule-date">27 июня, 10:00</p>
-                        <img src="./icons/weight.svg" alt="weight" height="66">
-                        <p class="schedule-title">Комплексная разминка</p>
+                        <div class="schedule-info">
+                            <img src="./icons/weight.svg" alt="weight" height="66">
+                            <p class="schedule-title">Комплексная разминка</p>
+                            <p class="schedule-description">Комплекс упражнений для подготовки тела к более интенсивной физической нагрузке.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -130,17 +151,19 @@
         <div class="mailing">
             <div class="mailing-box">
                 <h3>Подпишитесь на рассылку</h3>
-                <div class="subscribe-box">
-                    <input type="email" class="subscribe-email" placeholder="Ваш e-mail">
-                    <button class="subscribe-btn button">Подписаться</button>
-                </div>
-                <div class="agreement">
-                    <input type="checkbox" id="01" class="checkbox">
-                    <label for="01">Согласен с обработкой <a href="https://annblok.ru/workshop" target="_blank">персональных данных</a></label>
-                 </div>
+                <form>
+                    <div class="subscribe-box">
+                        <input type="email" class="subscribe-email" placeholder="Ваш e-mail">
+                        <input type="submit" class="subscribe-btn button" value="Подписаться" onclick="console.log('submit')"></input>
+                    </div>
+                    <div class="agreement">
+                        <input type="checkbox" id="01" class="checkbox" required>
+                        <label for="01">Согласен с обработкой <a href="https://annblok.ru/workshop" target="_blank">персональных данных</a></label>
+                    </div>
+                </form>
             </div>
         </div>
-        <section class="about">
+        <section id="about">
             <div class="container">
                 <div class="about-box">
                     <div>
@@ -182,9 +205,9 @@
                 <div class="footer-box">
                     <a href="#" class="header-logo"></a>
                     <ul>
-                        <li><a href="#">Мероприятия</a></li>
-                        <li><a href="#">Расписание</a></li>
-                        <li><a href="#">О компании</a></li>
+                        <li><a href="#events">Мероприятия</a></li>
+                        <li><a href="#schedule">Расписание</a></li>
+                        <li><a href="#about">О компании</a></li>
                     </ul> 
                 </div>
                 <div class="footer-social">
@@ -199,5 +222,29 @@
             </div>
         </div>
     </footer>
+    <div id="modal">
+        <div class="modal-content">
+            <div class="modal-close" onclick="closeModal()"></div>
+            <h3 class="modal-header">Заявка на участие «Марафон&nbsp;выносливости»</h3>
+            <p>Заполните все поля, и мы пришлем информацию в ближайшее время</p>
+            <form class="modal-form">
+                <input type="email" placeholder="Ваш e-mail" class="modal-email">
+                <input type="text" placeholder="Ваш номер телефона" class="modal-tel">
+                <input type="submit" value="Отправить" class="button modal-btn">
+            </form>
+        </div>
+    </div>
+    <script>
+        // Modal
+
+        function openModal() {
+            document.getElementById("modal").style.display = "flex";
+        }
+
+        function closeModal() {
+            document.getElementById("modal").style.display = "none";
+            //document.getElementById("modal").style.top = "-1000px";
+       }
+    </script>
 </body>
 </html>
