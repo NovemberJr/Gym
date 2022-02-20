@@ -1,0 +1,426 @@
+.subscribe-adaptive {
+    display: none;
+    width: 100%;
+}
+
+@media (min-width: 1001px) {
+    .header-burger {
+        display: none;
+    }
+    .event-active-btn {
+        display: block;
+    }
+    .event-btn-adaptive {
+        display: none;
+    }
+}
+@media (max-width: 1000px) {
+    .container {
+        max-width: 748px;
+        padding: 0 10px;
+    }
+    .header-logo {
+        width: 78px;
+        height: 24px;
+    }
+    .header {
+        padding: 31px 0 33px 0;
+    }
+    .header nav {
+        display: none;
+    }
+    .header-social {
+        gap: 20px;
+    }
+    .header-social a {
+        width: 26px;
+        height: 26px;
+    }
+    .banner-box {
+        padding: 28px 0 0 0;
+        height: 429px;
+        margin-bottom: 84px;
+    }
+    .banner h1 {
+        max-width: 350px;
+        font-size: 26px;
+    }
+    .banner-desc span {
+        font-size: 26px;
+    }
+    .banner-desc p, .banner-more {
+        font-size: 16px;
+        margin-left: 0;
+    }
+    .banner-bg {
+        right: 0;
+    }
+    .bg-left {
+        width: 194px;
+        height: 429px;
+    }
+    .bg-right {
+        width: 152px;
+        height: 429px;
+    }
+    .banner-bg img {
+        right: 0;
+        height: 325px;
+    }
+    .btn-down {
+        transform: scale(.8)
+    }
+    section {
+        padding-top: 19px;
+    }
+    .section-header {
+        margin-bottom: 19px;
+    }
+    .section-header h2 {
+        font-size: 26px;
+        max-width: 320px;
+    }
+    .section-header p {
+        font-size: 16px;
+    }
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px 20px;
+    }
+    .events-grid-item {
+        max-height: 309px;
+    }
+    .events-grid-item:nth-child(3) {
+        grid-column: span 2;
+    }
+    .event-type {
+        right: unset;
+        left: 0;
+        font-size: 12px;
+        padding: 6px 16px;
+    }
+    .event-active-btn {
+        display: none;
+    }
+    .event-btn-adaptive {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border: none;
+        background-color: #2B3541;
+        color: #FBF138;
+        width: 30px;
+        height: 30px;
+        font-size: 24px;
+        cursor: pointer;
+        transition: .3s;
+        opacity: 0;
+    }
+    #events {
+        margin-bottom: 54px;
+    }
+    #schedule {
+        padding-top: 39px;
+        margin-bottom: 0;
+    }
+    #schedule .section-header {
+        margin-bottom: 39px;
+    }
+    .schedule-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 333px 224px 224px;
+    }
+    .schedule-grid-item {
+        padding: 18px 23px;
+    }
+    .schedule-grid-item:nth-child(1),
+    .schedule-grid-item:nth-child(2),
+    .schedule-grid-item:nth-child(3),
+    .schedule-grid-item:nth-child(4),
+    .schedule-grid-item:nth-child(5),
+    .schedule-grid-item:nth-child(6) {
+        grid-row: unset;
+    }
+    .schedule-date {
+        font-size: 16px;
+    }
+    .schedule-title {
+        font-size: 16px;
+        margin-top: 34px;
+    }
+    .schedule-description {
+        font-size: 12px;
+    }
+    .schedule-grid-item:hover .schedule-title {
+        margin-top: 12px;
+    }
+    .mailing {
+        margin-top: 95px;
+        margin-bottom: 76px;
+        padding: 57px;
+    }
+    .mailing-box {
+        max-width: 350px;
+    }
+    .mailing h3 {
+        font-size: 26px;
+        text-align: center;
+        max-width: 300px;
+        margin: 0 auto 50px;
+    }
+    .mailing h3::before {
+        width: 40px;
+        height: 40px;
+        transform: translate(75%, -45%);
+    }
+    .desktop {
+        display: none;
+    }
+    .subscribe-adaptive {
+        display: block;
+        margin-top: 48px;
+    }
+    #about {
+        margin-bottom: 77px;
+    }
+    .about-box div {
+        flex-basis: 50%;
+    }
+    .about-image-box {
+        height: 227px;
+    }
+    .about-description {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 49px;
+    }
+    .about-list {
+        flex-wrap: wrap;
+        gap: unset;
+        row-gap: 25px;
+    }
+    .about-list div {
+        flex-basis: 50%;
+    }
+    .about-title {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+    .about-desc {
+        font-size: 16px;
+        line-height: 1.5;
+        max-width: 220px;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: unset;
+        gap: 45px;
+    }
+    .footer-box {
+        justify-content: space-between;
+    }
+    .footer ul {
+        font-size: 12px;
+        gap: 25px;
+    }
+    .footer-social {
+        align-self: flex-end;
+    }
+    .footer-social {
+        gap: 23px;
+    }
+    .footer-mail {
+        font-size: 12px;
+    }
+    .rights {
+        flex-direction: row;
+        margin-top: 30px;
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 661px) {
+    .about-list-mobile {
+        display: none;
+    }
+}
+@media (max-width: 660px) {
+    .container {
+        max-width: 640px;
+        padding: 0 10px;
+    }
+    .banner-box {
+        height: unset;
+        margin-bottom: 60px;
+    }
+    .banner-desc p {
+        margin-bottom: 40px;
+    }
+    .banner-more {
+        display: block;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .btn-down {
+        display: none;
+    }
+    .bg-left {
+        flex-basis: 62%;
+        height: 100%;
+    }
+    .bg-right {
+        flex-basis: 35%;
+        height: 100%;
+    }
+    .banner-bg {
+        position: relative;
+        top: unset; 
+        right: unset;
+        margin-top: 43px;
+        aspect-ratio: 1/0.82;
+    }
+    .banner-bg img {
+        width: 100%;
+        height: unset;
+        top: 0;
+    }
+    .events-grid-text {
+        padding: 19px 20px;
+    }
+    .event-date {
+        font-size: 12px;
+    }
+    .event-title {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+    .schedule-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+    }
+    .schedule-grid-item {
+        justify-content: flex-start;
+        padding: 20px 19px;
+        gap: 10px;
+    }
+    .schedule-date {
+        flex-grow: 0;
+    }
+    .schedule-info {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .schedule-text-box {
+        flex-basis: 81%;
+    }
+    .schedule-title {
+        margin: 0;
+        flex-basis: 81%;
+    }
+    .schedule-grid-item:nth-child(1) img {
+        height: 39px;
+    }
+    .schedule-grid-item:nth-child(2) img {
+        height: 53px;
+    }
+    .schedule-grid-item:nth-child(3) img {
+        height: 45px;
+    }
+    .schedule-grid-item:nth-child(4) img {
+        height: 37px;
+    }
+    .schedule-grid-item:nth-child(5) img {
+        height: 25px;
+    }
+    .schedule-grid-item:nth-child(6) img {
+        height: 40px;
+    }
+    .mailing {
+        margin-top: 80px;
+        margin-bottom: 63px;
+        padding: 57px 10px 41px;
+    }
+    .mailing-box {
+        max-width: 640px;
+    }
+    .subscribe-email {
+        flex-basis: 100%;
+    }
+    .about-box {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .about-text {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-header {
+        margin-bottom: 0;
+    }
+    .about-description {
+        max-width: 640px;
+        margin-top: 16px;
+        margin-bottom: 36px;
+    }
+    .about-list {
+        display: none;
+    }
+    .about-list-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .about-btn {
+        display: block;
+        margin-top: 23px;
+        text-align: center;
+    }
+    .about-desc {
+        max-width: 640px;
+    }
+    .about-box div:first-child {
+        padding: 0;
+    }
+    .about-image-box {
+        margin-top: 35px;
+    }
+    #about {
+        margin-bottom: 34px;
+    }
+    .footer {
+        gap: 5px;
+    }
+    .footer .header-logo {
+        width: 97px;
+        height: 30px;
+    }
+    .footer-box {
+        flex-direction: column;
+        gap: 28px;
+    }
+    .footer ul {
+        justify-content: space-between;
+        padding: 0;
+        width: 100%;
+    }
+    .footer-social {
+        padding: 0 30px;
+        align-self: unset;
+        justify-content: space-between;
+    }
+    .rights {
+        flex-direction: column;
+        align-items: center;
+    }
+    .modal-content {
+        padding: 20px 10px;
+        max-width: 500px;
+    }
+    .modal-header::before {
+        width: 35px;
+        height: 35px;
+        transform: translate(222%, -33%);
+    }
+}
