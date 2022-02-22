@@ -357,8 +357,6 @@ section {
 }
 .schedule-grid-item:hover {
     border-color:rgba(43, 53, 65, 1);
-    box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
-    background-color: #F3F3F3;
 }
 .schedule-grid-item:hover .schedule-description {
     margin-top: 10px;
@@ -477,7 +475,6 @@ section {
    left:0;
    top:calc(50% - 10px);
    background-color: #2B3541;
-   border-radius: 2px;
    border: 2px solid #2B3541;
 }
 /* Стили для псевдоэлемента after с изображением, когда пункт активен */
@@ -503,7 +500,6 @@ section {
    left:0;
    top:calc(50% - 10px);
    background-color: transparent;
-   border-radius: 2px;
    border: 2px solid #2B3541;
 }
 /* Стили для псевдоэлемента after с изображением, когда пункт НЕ активен */
@@ -661,9 +657,6 @@ footer {
     z-index: -1;
     transform: translate(-70%, -48%);
 }
-.footer-mail:hover {
-    transform: scale(1.1);
-}
 .footer-social2 {
     display: flex;
     gap: 30px;
@@ -677,6 +670,7 @@ footer {
 .rights a {
     text-decoration: underline;
     color: rgba(43, 53, 65, .3);
+    transition: 0.3s;
 }
 .rights a:hover {
     color: rgba(43, 53, 65, 1);
